@@ -17,7 +17,7 @@ add_action('init', 'preloader_wp_latest_jquery');
 /* Adding plugin javascript active file */
 function preloader_plugin_active() {
 
-	wp_register_script( 'plugin-script-active', plugins_url('js/main.js', __FILE__) );
+	wp_register_script( 'plugin-script-active', plugins_url('main.js', __FILE__) );
     wp_enqueue_script( 'plugin-script-active' );
 
 }
@@ -26,7 +26,7 @@ add_action( 'init', 'preloader_plugin_active' );
 /* Adding plugin custom CSS file */
 function preloader_plugin_styles() {
 
-	wp_register_style( 'plugin-style', plugins_url('css/preloader.css', __FILE__) );
+	wp_register_style( 'plugin-style', plugins_url('preloader.css', __FILE__) );
 		wp_enqueue_style( 'plugin-style' );
 
 }
