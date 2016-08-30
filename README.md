@@ -1,6 +1,7 @@
 # wp-preloader-plugin
 <p>The simplest preloader plugin for WordPress. Lightweight and effective.</p>
 Here is the [DEMO](http://codepen.io/lpq66/pen/qaWWVX)
+
 Another [DEMO](http://codepen.io/lpq66/pen/xEKLQb)
 #Installation#
 <p>1. Just download zip file and upload it as regular plugin<p>
