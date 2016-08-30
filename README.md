@@ -7,58 +7,20 @@ Here is the [demo:](http://codepen.io/lpq66/pen/qaWWVX)
 
 #Usage#
 ```
-#loading{
-	background: #f5f5f5;    
-	height: 100%;
-	width: 100%;
-	position: fixed;
-	z-index: 999;
-	margin-top: 0px;
-	top: 0px;
-}
+#preloader  {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #f7f7f7;
+     z-index: 999;
+     height: 100%;
+ }
+
 ```
-`background: #f5f5f5;`  - Change your preloader page background here.
+`background: #f7f7f7;`  - Change your preloader page background here.
 
 `z-index: 999;` - Change this to a bigger value if your menu bar overlapping the preloader. 
 
-Next thing is to find any css preloader or you can use mine:
-
-```
-#preloader_3:before{
-    width:20px;
-    height:20px;
-    border-radius:20px;
-    background:blue;
-    content:'';
-    position:absolute;
-    background:#9b59b6;
-    animation: preloader_3_before 1.5s infinite ease-in-out;
-}
-
-#preloader_3:after{
-    width:20px;
-    height:20px;
-    border-radius:20px;
-    background:blue;
-    content:'';
-    position:absolute;
-    background:#2ecc71;
-    left:22px;
-    animation: preloader_3_after 1.5s infinite ease-in-out;
-}
-
-@keyframes preloader_3_before {
-    0% {transform: translateX(0px) rotate(0deg)}
-    50% {transform: translateX(50px) scale(1.2) rotate(260deg); background:#2ecc71;border-radius:0px;}
-      100% {transform: translateX(0px) rotate(0deg)}
-}
-@keyframes preloader_3_after {
-    0% {transform: translateX(0px)}
-    50% {transform: translateX(-50px) scale(1.2) rotate(-260deg);background:#9b59b6;border-radius:0px;}
-    100% {transform: translateX(0px)}
-}
-```
-
-`background:#9b59b6` - Color of first item
-
-`background:#2ecc71;` - Color of second item
+Next thing is to find any css preloader or you can use mine.
