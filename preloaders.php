@@ -35,17 +35,20 @@ add_action( 'wp_enqueue_scripts', 'preloader_plugin_styles' );
 /* HTML Content */
 function preloader_main_content () {
 ?>
-<div id="loading">
-	<div id="loading-center">
-		<div id="loading-center-absolute">
+<div id="preloader">
+		<div id="loading">
+			<div id="cssload-pgloading">
+				<div class="cssload-loadingwrap">
+					<ul class="cssload-bokeh">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
 			</div>
-			<div class="object" id="first_object"></div>
-			<div class="object" id="second_object"></div>
-			<div class="object" id="third_object"></div>
-			<div class="object" id="forth_object"></div>
 		</div>
 	</div>
-</div>
 
 <?php
 }
